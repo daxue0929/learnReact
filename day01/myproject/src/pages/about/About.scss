@@ -1,0 +1,105 @@
+.my-resume {
+  width: 1080px;
+  height: 810px;
+  margin: 0px auto;
+  background-image: url("../../static/about-bg.jpg");
+
+  .main {
+    width: 800px;
+    height: 788px; /*内容区域*/
+    position: relative;
+    left: 280px;
+    top: 11px;
+    //background: #E9FFCF;
+    .person-info {
+      height: 100px;
+
+      .name {
+        float: left;
+        width: 200px;
+        font-size: 30px;
+        line-height: 100px;
+        //background: #FB57FF;
+      }
+
+      .left {
+        float: left;
+        width: 300px;
+        margin-top: 20px;
+        //background: #FECEDD;
+        & > li:first-child {
+          color: #3E2ACB;
+        }
+
+        & > li:last-child {
+          color: #3E2ACB;
+          margin-top: 15px;
+        }
+      }
+
+      .right {
+        float: left;
+        margin-top: 20px;
+
+        & > li:first-child {
+          color: #3E2ACB;
+        }
+
+        & > li:last-child {
+          color: #3E2ACB;
+          margin-top: 15px;
+        }
+      }
+
+      //background: #B4FF71;
+    }
+
+    .person-info:after {
+      clear: both;
+    }
+
+    .education-bg, .person-technology, .peoject-experience, .person-summary {
+      & > .title {
+        //width: 120px;
+        border-bottom: 2px solid #FAE9AE;
+      }
+      & > .title > div:first-child {
+        width: 100px;
+        padding-left: 20px;
+        background: #FAE9AE;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    .education-bg {
+      height: 100px;
+      background: #FFF4BD;
+      & > .article > span {
+        display: inline-block;
+        width: 200px;
+        padding-left: 30px;
+        margin-right: 10px;
+        margin-top: 27px;
+        //background: #90CB86;
+      }
+
+    }
+
+    .person-technology {
+      height: 200px;
+
+      //background: #5ACBAC;
+    }
+
+    .peoject-experience {
+      height: 300px;
+
+      //background: #FF988E;
+    }
+
+    .person-summary {
+      height: 100px;
+      background: #A495FF;
+    }
+  }
+}
