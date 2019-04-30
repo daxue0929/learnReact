@@ -20,8 +20,8 @@ class Header extends Component{
       <div style={this.bodyStyle}>
         <ul style={this.asideList}>
           <li><a href="/">Home</a></li>
-          <li><a href="#" title='暂未开放'>Find</a></li>
-          <li><a href="#" title='暂未开放'>Blog</a></li>
+          <li><a href="/" title='暂未开放'>Find</a></li>
+          <li><a href="/" title='暂未开放'>Blog</a></li>
           <li><a href="/about">About</a></li>
         </ul>
       </div>

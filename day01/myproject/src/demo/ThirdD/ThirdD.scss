@@ -1,0 +1,78 @@
+
+@media only screen and (max-width: 700px){
+  .wrap {
+    background-color: pink;
+  }
+}
+$length: 100px;
+
+.wrap{
+  height: 200px;
+  //background-color: pink;
+  margin-top: 150px;
+  perspective: 1000px;
+}
+.wrap .cube{
+  position: relative;
+  width: $length;
+  height: $length;
+  background: rgba(0,0,0,.5);
+  margin: 0 auto;
+  transform-style: preserve-3d;
+
+  transform: rotateX(0deg) rotateY(0deg);
+
+  animation: rot 20s linear infinite;
+}
+.wrap .cube div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: $length/10;
+  color: red;
+  text-align: center;
+  line-height: $length;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap .cube .front{
+  background-color: rgba(255,0,0,.5);
+  transform: translateZ($length/2);
+  background-image: url("image/1.jpg");
+}
+.wrap .cube .back{
+  background-color: rgba(255,255,0,.5);
+  transform: translateZ(-$length/2) rotateY(180deg);
+  background-image: url("image/2.jpg");
+}
+.wrap .cube .right{
+   background-color: rgba(0,255,0,.5);
+  transform: rotateY(90deg) translateZ($length/2);
+  background-image: url("image/3.jpg");
+ }
+.wrap .cube .left{
+  background-color: rgba(0,0,255,.5);
+  transform: rotateY(-90deg) translateZ($length/2);
+  background-image: url("image/4.jpg");
+}
+.wrap .cube .top{
+  background-color: rgba(255,0,255,.5);
+  transform: rotateX(90deg) translateZ($length/2);
+  background-image: url("image/5.jpg");
+}
+.wrap .cube .bottom{
+  background-color: rgba(200,140,0,.5);
+  transform: rotateX(-90deg) translateZ($length/2);
+  background-image: url("image/6.jpg");
+}
+
+@keyframes rot {
+  0% {transform: rotateX(0deg) rotateY(0deg)}
+  100% {transform: rotateX(360deg) rotateY(360deg)}
+}
+
+
+
