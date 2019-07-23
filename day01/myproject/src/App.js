@@ -4,7 +4,10 @@ import MyRouter from "./Router";
 class App extends Component {
   render() {
     return (
-      <MyRouter />
+      <div>
+        <MyRouter />
+      </div>
+
     );
   }
 }
